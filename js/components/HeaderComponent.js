@@ -1,18 +1,39 @@
 export default {
+    data() {
+        return {
+            isMenuOpen: false
+        }
+    },
+    methods: {
+        toggleMenu() {
+            this.isMenuOpen = !this.isMenuOpen;
+        }
+    },
     template: `
         <header class="header">
             <div class="container">
                 <a href="#" class="logo">
                     <img src="assets/logo.jpg" alt="Ecografías Bogotá" style="height: 40px; margin-right: 10px;">
                 </a>
-                <nav class="nav-links">
-                    <a href="#" class="text-secondary">Inicio</a>
-                    <a href="#">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
-                    <a href="#">DEP</a>
-                    <a href="#">Sedes</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contacto</a>
+                
+                <button class="mobile-menu-btn" @click="toggleMenu" aria-label="Toggle menu">
+                    <i :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+                </button>
+                
+                <nav :class="['nav-links', { 'open': isMenuOpen }]">
+                    <a href="#" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
+                    <a href="#" @click="isMenuOpen = false">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <a href="#" @click="isMenuOpen = false">DEP</a>
+                    <a href="#" @click="isMenuOpen = false">Sedes</a>
+                    <a href="#" @click="isMenuOpen = false">Blog</a>
+                    <a href="#" @click="isMenuOpen = false">Contacto</a>
+                    <!-- Mostrar acciones dentro del menú en móvil -->
+                    <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
+                        <button class="btn btn-outline" style="width: 100%;">Ver tarifas</button>
+                        <button class="btn btn-primary" style="width: 100%;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
+                    </div>
                 </nav>
+                
                 <div class="header-actions">
                     <button class="btn btn-outline">Ver tarifas</button>
                     <button class="btn btn-primary"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
