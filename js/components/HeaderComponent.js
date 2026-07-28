@@ -21,7 +21,8 @@ export default {
                 </button>
                 
                 <nav :class="['nav-links', { 'open': isMenuOpen }]">
-                    <a href="#" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
+                    <a href="index.html" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
+                    <a href="ecografias-generales.html" @click="isMenuOpen = false">Ecografías Generales</a>
                     <a href="#" @click="isMenuOpen = false">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
                     <a href="#" @click="isMenuOpen = false">DEP</a>
                     <a href="#" @click="isMenuOpen = false">Sedes</a>
