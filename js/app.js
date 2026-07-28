@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import HeaderComponent from './components/HeaderComponent.js';
+import HeaderComponent from './components/HeaderComponent.js?v=2';
 import HeroComponent from './components/HeroComponent.js';
 import StepsComponent from './components/StepsComponent.js';
 import ServicesComponent from './components/ServicesComponent.js';

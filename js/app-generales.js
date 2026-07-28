@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
-import HeaderComponent from './components/HeaderComponent.js';
-import EcografiasGeneralesComponent from './components/EcografiasGeneralesComponent.js';
+import HeaderComponent from './components/HeaderComponent.js?v=2';
+import EcografiasGeneralesComponent from './components/EcografiasGeneralesComponent.js?v=3';
 import FooterComponent from './components/FooterComponent.js';
 
 const app = createApp({

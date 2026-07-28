@@ -1,12 +1,17 @@
 export default {
     data() {
         return {
-            isMenuOpen: false
+            isMenuOpen: false,
+            isServicesOpen: false
         }
     },
     methods: {
         toggleMenu() {
             this.isMenuOpen = !this.isMenuOpen;
+        },
+        toggleServices(e) {
+            if (e) e.preventDefault();
+            this.isServicesOpen = !this.isServicesOpen;
         }
     },
     template: `
@@ -22,8 +27,12 @@ export default {
                 
                 <nav :class="['nav-links', { 'open': isMenuOpen }]">
                     <a href="index.html" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
-                    <a href="ecografias-generales.html" @click="isMenuOpen = false">Ecografías Generales</a>
-                    <a href="#" @click="isMenuOpen = false">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                    <div class="dropdown" @mouseenter="isServicesOpen = true" @mouseleave="isServicesOpen = false" :class="{ 'open': isServicesOpen }">
+                        <a href="#" @click="toggleServices">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="ecografias-generales.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Generales</a>
+                        </div>
+                    </div>
                     <a href="#" @click="isMenuOpen = false">DEP</a>
                     <a href="#" @click="isMenuOpen = false">Sedes</a>
                     <a href="#" @click="isMenuOpen = false">Blog</a>
