@@ -5,7 +5,7 @@ import StepsComponent from './components/StepsComponent.js';
 import ServicesComponent from './components/ServicesComponent.js';
 import FeaturesComponent from './components/FeaturesComponent.js';
 import PremiumComponent from './components/PremiumComponent.js?v=2';
-import LocationsComponent from './components/LocationsComponent.js';
+import LocationsComponent from './components/LocationsComponent.js?v=8';
 import ArticlesComponent from './components/ArticlesComponent.js';
 import CTAComponent from './components/CTAComponent.js';
 import FooterComponent from './components/FooterComponent.js';
