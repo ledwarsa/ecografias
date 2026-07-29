@@ -2,7 +2,8 @@ export default {
     data() {
         return {
             isMenuOpen: false,
-            isServicesOpen: false
+            isServicesOpen: false,
+            isAboutOpen: false
         }
     },
     methods: {
@@ -12,6 +13,10 @@ export default {
         toggleServices(e) {
             if (e) e.preventDefault();
             this.isServicesOpen = !this.isServicesOpen;
+        },
+        toggleAbout(e) {
+            if (e) e.preventDefault();
+            this.isAboutOpen = !this.isAboutOpen;
         }
     },
     template: `
@@ -27,6 +32,14 @@ export default {
                 
                 <nav :class="['nav-links', { 'open': isMenuOpen }]">
                     <a href="index.html" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
+                    <div class="dropdown" @mouseenter="isAboutOpen = true" @mouseleave="isAboutOpen = false" :class="{ 'open': isAboutOpen }">
+                        <a href="#" @click="toggleAbout">Sobre nosotros <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="nosotros.html" @click="isMenuOpen = false; isAboutOpen = false">Quiénes somos</a>
+                            <a href="preguntas-frecuentes.html" @click="isMenuOpen = false; isAboutOpen = false">Preguntas frecuentes</a>
+                            <a href="testimonios.html" @click="isMenuOpen = false; isAboutOpen = false">Testimonios</a>
+                        </div>
+                    </div>
                     <div class="dropdown" @mouseenter="isServicesOpen = true" @mouseleave="isServicesOpen = false" :class="{ 'open': isServicesOpen }">
                         <a href="#" @click="toggleServices">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
                         <div class="dropdown-menu">
@@ -36,7 +49,7 @@ export default {
                     <a href="#" @click="isMenuOpen = false">DEP</a>
                     <a href="#" @click="isMenuOpen = false">Sedes</a>
                     <a href="#" @click="isMenuOpen = false">Blog</a>
-                    <a href="#" @click="isMenuOpen = false">Contacto</a>
+                    <a href="contactenos.html" @click="isMenuOpen = false">Contacto</a>
                     <!-- Mostrar acciones dentro del menú en móvil -->
                     <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
                         <button class="btn btn-outline" style="width: 100%;">Ver tarifas</button>

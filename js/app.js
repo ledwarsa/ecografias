@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import HeaderComponent from './components/HeaderComponent.js?v=2';
+import HeaderComponent from './components/HeaderComponent.js?v=4';
 import HeroComponent from './components/HeroComponent.js';
 import StepsComponent from './components/StepsComponent.js';
 import ServicesComponent from './components/ServicesComponent.js';
@@ -23,7 +23,7 @@ const app = createApp({
             <ArticlesComponent />
             <CTAComponent />
             <FooterComponent />
-            <a href="#" class="whatsapp-float">
+            <a href="https://wa.link/42dexe" target="_blank" class="whatsapp-float">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
