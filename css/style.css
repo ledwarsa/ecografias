@@ -1059,6 +1059,16 @@ ul {
     grid-template-columns: 1fr;
   }
   
+  .locations-grid .location-card {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .locations-grid .location-card > div {
+    justify-content: center !important;
+  }
+  
   /* Services Carousel (Mobile) */
   .services-grid {
     display: flex;
@@ -1168,6 +1178,12 @@ ul {
   padding: 20px;
 }
 
+.accordion-layout.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 @media (max-width: 900px) {
   .accordion-layout, .accordion-layout.row-reverse {
     flex-direction: column;
@@ -1179,10 +1195,4 @@ ul {
   .accordion-layout.two-columns {
     grid-template-columns: 1fr;
   }
-}
-
-.accordion-layout.two-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
 }
