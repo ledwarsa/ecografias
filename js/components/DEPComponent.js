@@ -10,8 +10,8 @@ export default {
                     </p>
                 </div>
 
-                <div class="row align-items-center" style="margin-bottom: 50px;">
-                    <div class="col-md-6">
+                <div class="row align-items-center" style="margin-bottom: 50px; display: flex; flex-wrap: wrap; gap: 30px; align-items: center;">
+                    <div class="col-md-6" style="flex: 1; min-width: 300px;">
                         <ul style="list-style: none; padding-left: 0;">
                             <li style="margin-bottom: 15px; font-size: 1.1rem; display: flex; align-items: flex-start;">
                                 <i class="fas fa-check" style="color: var(--secondary); margin-top: 5px; margin-right: 15px; font-size: 1.2rem;"></i>
@@ -39,8 +39,8 @@ export default {
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6">
-                        <img src="https://ecografiasbogota.com/wp-content/uploads/2024/03/woman-getting-ultrasound-abdomen-from-doctor-1.jpg" alt="Ecografía" style="width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div class="col-md-6" style="flex: 1; min-width: 300px; text-align: center;">
+                        <img src="https://ecografiasbogota.com/wp-content/uploads/2024/03/woman-getting-ultrasound-abdomen-from-doctor-1.jpg" alt="Ecografía" style="max-width: 350px; width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: inline-block;">
                     </div>
                 </div>
 
