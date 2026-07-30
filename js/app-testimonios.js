@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import HeaderComponent from './components/HeaderComponent.js?v=4';
+import HeaderComponent from './components/HeaderComponent.js?v=7';
 import TestimoniosComponent from './components/TestimoniosComponent.js?v=1';
 import FooterComponent from './components/FooterComponent.js';
 

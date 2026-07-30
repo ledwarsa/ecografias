@@ -1,12 +1,12 @@
 import { createApp } from 'vue';
-import HeaderComponent from './components/HeaderComponent.js?v=4';
+import HeaderComponent from './components/HeaderComponent.js?v=8';
 import HeroComponent from './components/HeroComponent.js';
 import StepsComponent from './components/StepsComponent.js';
 import ServicesComponent from './components/ServicesComponent.js';
 import FeaturesComponent from './components/FeaturesComponent.js';
 import PremiumComponent from './components/PremiumComponent.js?v=2';
 import LocationsComponent from './components/LocationsComponent.js?v=8';
-import ArticlesComponent from './components/ArticlesComponent.js';
+import ArticlesComponent from './components/ArticlesComponent.js?v=2';
 import CTAComponent from './components/CTAComponent.js';
 import FooterComponent from './components/FooterComponent.js';
 
