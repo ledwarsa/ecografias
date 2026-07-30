@@ -22,7 +22,7 @@ export default {
                             <li><a href="obstetricas.html">Ecografías Obstétricas Avanzadas</a></li>
                             <li><a href="doppler.html">Doppler o Dúplex Scan Color</a></li>
                             <li><a href="dep.html">Diagnóstico Preventivo (DEP)</a></li>
-                            <li><a href="#">Tarifas</a></li>
+                            <li><a href="tarifas.html">Tarifas</a></li>
                         </ul>
                     </div>
                     

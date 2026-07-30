@@ -55,13 +55,13 @@ export default {
                     <a href="contactenos.html" @click="isMenuOpen = false">Contacto</a>
                     <!-- Mostrar acciones dentro del menú en móvil -->
                     <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
-                        <button class="btn btn-outline" style="width: 100%;">Ver tarifas</button>
+                        <a href="tarifas.html" class="btn btn-outline" style="width: 100%;" @click="isMenuOpen = false">Ver tarifas</a>
                         <button class="btn btn-primary" style="width: 100%;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
                     </div>
                 </nav>
                 
                 <div class="header-actions">
-                    <button class="btn btn-outline">Ver tarifas</button>
+                    <a href="tarifas.html" class="btn btn-outline">Ver tarifas</a>
                     <button class="btn btn-primary"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
                 </div>
             </div>
