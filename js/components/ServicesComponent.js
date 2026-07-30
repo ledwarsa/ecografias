@@ -16,7 +16,7 @@ export default {
                         <div class="service-content">
                             <h3>Ecografías Generales</h3>
                             <p>Evaluamos tus órganos y tejidos para un diagnóstico preciso y oportuno.</p>
-                            <a href="#" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
+                            <a href="ecografias-generales.html" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -28,7 +28,7 @@ export default {
                         <div class="service-content">
                             <h3>Ecografías Obstétricas</h3>
                             <p>Acompañamos cada etapa de tu embarazo con la mejor tecnología.</p>
-                            <a href="#" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
+                            <a href="obstetricas.html" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -40,7 +40,7 @@ export default {
                         <div class="service-content">
                             <h3>Ecografías Doppler</h3>
                             <p>Estudiamos el flujo sanguíneo para detectar alteraciones vasculares.</p>
-                            <a href="#" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
+                            <a href="doppler.html" class="service-link">Ver examen <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                     
@@ -53,7 +53,7 @@ export default {
                         <div class="service-content">
                             <h3>Diagnóstico Ecográfico Preventivo (DEP)</h3>
                             <p>Un examen completo para evaluar múltiples órganos y detectar alteraciones tempranas.</p>
-                            <a href="#" class="service-link">Conocer más <i class="fas fa-arrow-right"></i></a>
+                            <a href="dep.html" class="service-link">Conocer más <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

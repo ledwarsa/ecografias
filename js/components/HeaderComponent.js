@@ -22,7 +22,7 @@ export default {
     template: `
         <header class="header">
             <div class="container">
-                <a href="#" class="logo">
+                <a href="index.html" class="logo">
                     <img src="assets/logo.jpg" alt="Ecografías Bogotá" style="height: 40px; margin-right: 10px;">
                 </a>
                 
@@ -33,7 +33,7 @@ export default {
                 <nav :class="['nav-links', { 'open': isMenuOpen }]">
                     <a href="index.html" class="text-secondary" @click="isMenuOpen = false">Inicio</a>
                     <div class="dropdown" @mouseenter="isAboutOpen = true" @mouseleave="isAboutOpen = false" :class="{ 'open': isAboutOpen }">
-                        <a href="#" @click="toggleAbout">Sobre nosotros <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                        <a href="#" @click.prevent="toggleAbout">Sobre nosotros <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
                         <div class="dropdown-menu">
                             <a href="nosotros.html" @click="isMenuOpen = false; isAboutOpen = false">Quiénes somos</a>
                             <a href="preguntas-frecuentes.html" @click="isMenuOpen = false; isAboutOpen = false">Preguntas frecuentes</a>
@@ -41,7 +41,7 @@ export default {
                         </div>
                     </div>
                     <div class="dropdown" @mouseenter="isServicesOpen = true" @mouseleave="isServicesOpen = false" :class="{ 'open': isServicesOpen }">
-                        <a href="#" @click="toggleServices">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
+                        <a href="#" @click.prevent="toggleServices">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
                         <div class="dropdown-menu">
                             <a href="ecografias-generales.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Generales</a>
                             <a href="dep.html" @click="isMenuOpen = false; isServicesOpen = false">Diagnóstico Ecográfico Preventivo (DEP)</a>
@@ -56,13 +56,13 @@ export default {
                     <!-- Mostrar acciones dentro del menú en móvil -->
                     <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
                         <a href="tarifas.html" class="btn btn-outline" style="width: 100%;" @click="isMenuOpen = false">Ver tarifas</a>
-                        <button class="btn btn-primary" style="width: 100%;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
+                        <a href="https://wa.link/42dexe" target="_blank" class="btn btn-primary" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
                     </div>
                 </nav>
                 
                 <div class="header-actions">
                     <a href="tarifas.html" class="btn btn-outline">Ver tarifas</a>
-                    <button class="btn btn-primary"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</button>
+                    <a href="https://wa.link/42dexe" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
                 </div>
             </div>
         </header>

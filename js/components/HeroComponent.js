@@ -27,8 +27,8 @@ export default {
                     </div>
                     
                     <div class="hero-actions">
-                        <button class="btn btn-primary btn-lg"><i class="fab fa-whatsapp" style="margin-right:8px;"></i> Agendar cita</button>
-                        <button class="btn btn-outline btn-lg">Ver tarifas</button>
+                        <a href="https://wa.link/42dexe" target="_blank" class="btn btn-primary btn-lg" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="fab fa-whatsapp" style="margin-right:8px;"></i> Agendar cita</a>
+                        <a href="tarifas.html" class="btn btn-outline btn-lg">Ver tarifas</a>
                     </div>
                 </div>
                 

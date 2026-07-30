@@ -28,7 +28,7 @@ export default {
                 </div>
 
                 <div class="text-center">
-                    <a href="https://ecografiasbogota.com/nuestras-sedes/" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px; border-radius: 8px; text-transform: uppercase; font-weight: bold;">Ver Tarifas</a>
+                    <a href="tarifas.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px; border-radius: 8px; text-transform: uppercase; font-weight: bold;">Ver Tarifas</a>
                 </div>
             </div>
         </div>
