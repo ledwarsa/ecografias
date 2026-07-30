@@ -44,10 +44,13 @@ export default {
                         <a href="#" @click="toggleServices">Servicios <i class="fas fa-chevron-down" style="font-size: 0.8em;"></i></a>
                         <div class="dropdown-menu">
                             <a href="ecografias-generales.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Generales</a>
+                            <a href="dep.html" @click="isMenuOpen = false; isServicesOpen = false">Diagnóstico Ecográfico Preventivo (DEP)</a>
+                            <a href="obstetricas.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Obstétricas Avanzadas</a>
+                            <a href="doppler.html" @click="isMenuOpen = false; isServicesOpen = false">Doppler o Dúplex Scan Color</a>
                         </div>
                     </div>
-                    <a href="#" @click="isMenuOpen = false">DEP</a>
-                    <a href="#" @click="isMenuOpen = false">Sedes</a>
+                    <a href="dep.html" @click="isMenuOpen = false">DEP</a>
+                    <a href="sedes.html" @click="isMenuOpen = false">Sedes</a>
                     <a href="blogs.html" @click="isMenuOpen = false">Blog</a>
                     <a href="contactenos.html" @click="isMenuOpen = false">Contacto</a>
                     <!-- Mostrar acciones dentro del menú en móvil -->

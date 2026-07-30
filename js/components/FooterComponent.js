@@ -18,10 +18,10 @@ export default {
                     <div class="footer-links">
                         <h4>Servicios</h4>
                         <ul>
-                            <li><a href="#">Ecografías Generales</a></li>
-                            <li><a href="#">Ecografías Obstétricas</a></li>
-                            <li><a href="#">Ecografías Doppler</a></li>
-                            <li><a href="#">Diagnóstico Preventivo (DEP)</a></li>
+                            <li><a href="ecografias-generales.html">Ecografías Generales</a></li>
+                            <li><a href="obstetricas.html">Ecografías Obstétricas Avanzadas</a></li>
+                            <li><a href="doppler.html">Doppler o Dúplex Scan Color</a></li>
+                            <li><a href="dep.html">Diagnóstico Preventivo (DEP)</a></li>
                             <li><a href="#">Tarifas</a></li>
                         </ul>
                     </div>
