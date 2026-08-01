@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Ecografías Generales",
+    "description": "Evaluamos tus órganos y tejidos para un diagnóstico preciso y oportuno.",
+    "image": "assets/service1.jpg",
+    "icon": "fa-heartbeat",
+    "link": "ecografias-generales.html",
+    "highlight": false
+  },
+  {
+    "id": 2,
+    "title": "Ecografías Obstétricas",
+    "description": "Acompañamos cada etapa de tu embarazo con la mejor tecnología.",
+    "image": "assets/service2.png",
+    "icon": "fa-baby",
+    "link": "obstetricas.html",
+    "highlight": false
+  },
+  {
+    "id": 3,
+    "title": "Ecografías Doppler",
+    "description": "Estudiamos el flujo sanguíneo para detectar alteraciones vasculares.",
+    "image": "assets/service3.png",
+    "icon": "fa-wave-square",
+    "link": "doppler.html",
+    "highlight": false
+  },
+  {
+    "id": 4,
+    "title": "Diagnóstico Ecográfico Preventivo (DEP)",
+    "description": "Un examen completo para evaluar múltiples órganos y detectar alteraciones tempranas.",
+    "image": "assets/service4.png",
+    "icon": "fa-clipboard-check",
+    "link": "dep.html",
+    "highlight": true
+  }
+]

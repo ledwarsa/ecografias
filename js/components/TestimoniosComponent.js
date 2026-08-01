@@ -1,51 +1,21 @@
+import { ref, onMounted } from 'vue';
+
 export default {
-    data() {
-        return {
-            reviews: [
-                {
-                    name: 'Laura Aponte',
-                    text: 'Excelente servicio. La Doc super diligente y atenta. La cita fue muy puntual y los precios son muy adsequibles. La recomiendo por completo.',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Laura+Aponte&background=random'
-                },
-                {
-                    name: 'Victoria Ortega',
-                    text: 'La atención fue muy buena, la dra se toma el tiempo y hace que el momento sea ameno, los resultados y el informe los entregan de inmediato. El consultorio es privado y discreto.',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Victoria+Ortega&background=random'
-                },
-                {
-                    name: 'Wendy V. Domínguez',
-                    text: 'Excelente servicio, rápido, respetuoso y con amor.',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Wendy+V+Dominguez&background=random'
-                },
-                {
-                    name: 'Diana Cortés',
-                    text: 'Excelente servicio me encanta lo profesional el Dr. José A Rodríguez',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Diana+Cortes&background=random'
-                },
-                {
-                    name: 'Milena',
-                    text: 'Servicio amable , buenos precios y atencion profesional',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Milena&background=random'
-                },
-                {
-                    name: 'Rosmery Quiroga',
-                    text: 'Excelente',
-                    stars: 5,
-                    date: 'Hace un tiempo',
-                    image: 'https://ui-avatars.com/api/?name=Rosmery+Quiroga&background=random'
+    setup() {
+        const reviews = ref([]);
+
+        onMounted(async () => {
+            try {
+                const response = await fetch('content/testimonials.json');
+                if (response.ok) {
+                    reviews.value = await response.json();
                 }
-            ]
-        }
+            } catch (error) {
+                console.error("Error loading testimonials:", error);
+            }
+        });
+
+        return { reviews };
     },
     template: `
         <div class="testimonios-section" style="padding-top: 60px; padding-bottom: 60px; background-color: #f9fbfd;">
