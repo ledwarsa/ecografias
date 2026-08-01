@@ -42,6 +42,11 @@
                 </a>
             </li>
             <li>
+                <a href="index.php?page=seo" class="<?php echo $page === 'seo' ? 'active' : ''; ?>">
+                    <i class="fas fa-search"></i> SEO Títulos/Metas
+                </a>
+            </li>
+            <li>
                 <a href="index.php?page=settings" class="<?php echo $page === 'settings' ? 'active' : ''; ?>">
                     <i class="fas fa-cog"></i> Configuración (SEO/Tags)
                 </a>
