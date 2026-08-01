@@ -1,4 +1,10 @@
+import { useLinks } from '../composables/useLinks.js';
+
 export default {
+    setup() {
+        const { links } = useLinks();
+        return { links };
+    },
     data() {
         return {
             isMenuOpen: false,
@@ -53,16 +59,15 @@ export default {
                     <a href="sedes.html" @click="isMenuOpen = false">Sedes</a>
                     <a href="blogs.html" @click="isMenuOpen = false">Blog</a>
                     <a href="contactenos.html" @click="isMenuOpen = false">Contacto</a>
-                    <!-- Mostrar acciones dentro del menú en móvil -->
                     <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
                         <a href="tarifas.html" class="btn btn-outline" style="width: 100%;" @click="isMenuOpen = false">Ver tarifas</a>
-                        <a href="https://wa.link/42dexe" target="_blank" class="btn btn-primary" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
+                        <a :href="links.whatsapp" target="_blank" class="btn btn-primary" style="width: 100%; display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
                     </div>
                 </nav>
                 
                 <div class="header-actions">
                     <a href="tarifas.html" class="btn btn-outline">Ver tarifas</a>
-                    <a href="https://wa.link/42dexe" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
+                    <a :href="links.whatsapp" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; justify-content: center; text-decoration: none;"><i class="far fa-calendar-check" style="margin-right:8px;"></i> Agendar cita</a>
                 </div>
             </div>
         </header>

@@ -1,69 +1,31 @@
+import { ref, onMounted } from 'vue';
+import { useLinks } from '../composables/useLinks.js';
+
 export default {
-    data() {
-        return {
-            categories: [
-                {
-                    name: 'Obstétricas y Pélvicas',
-                    icon: 'fas fa-baby',
-                    items: [
-                        { name: 'Obstétrica transabdominal', price: 100000 },
-                        { name: 'Obstétrica transvaginal', price: 110000 },
-                        { name: 'Pélvica transabdominal', price: 100000 },
-                        { name: 'Pélvica transvaginal', price: 110000 },
-                        { name: 'Seguimiento ovulación (por sesión)', price: 100000 }
-                    ]
-                },
-                {
-                    name: 'Ecografías Especializadas y Doppers',
-                    icon: 'fas fa-heartbeat',
-                    items: [
-                        { name: 'Doppler venoso o arterial miembros inferiores o superiores (bilateral)', price: 220000 },
-                        { name: 'Doppler venoso o arterial miembro inferior o superior (unilateral)', price: 130000 },
-                        { name: 'Doppler venoso y arterial de miembros superiores e inferiores (bilateral)', price: 400000 },
-                        { name: 'Doppler venoso y arterial de miembro superior e inferior (unilateral)', price: 220000 },
-                        { name: 'Doppler vasos cuello', price: 200000 },
-                        { name: 'Doppler vasos pélvicos o abdominales', price: 200000 },
-                        { name: 'Doppler testicular', price: 200000 },
-                        { name: 'Doppler arterias renales', price: 200000 }
-                    ]
-                },
-                {
-                    name: 'Ecografías Generales',
-                    icon: 'fas fa-stethoscope',
-                    items: [
-                        { name: 'Diagnóstico ecográfico preventivo (DEP)', price: 280000 },
-                        { name: 'Abdominal superior', price: 120000 },
-                        { name: 'Abdominal total', price: 140000 },
-                        { name: 'Masas abdominales y retroperitoneo', price: 140000 },
-                        { name: 'Hepatobiliar', price: 110000 },
-                        { name: 'Renal y de vías urinarias', price: 120000 },
-                        { name: 'Próstata transabdominal', price: 110000 },
-                        { name: 'Próstata transrectal', price: 130000 },
-                        { name: 'Renal, aorta, bazo', price: 120000 },
-                        { name: 'Mamaria (sin implantes)', price: 110000 },
-                        { name: 'Mamaria (con implantes)', price: 140000 },
-                        { name: 'Articular unilateral', price: 110000 },
-                        { name: 'Articular bilateral', price: 160000 },
-                        { name: 'Testicular', price: 110000 },
-                        { name: 'Tiroides-cuello', price: 110000 },
-                        { name: 'Otras zonas del cuerpo', price: 110000 },
-                        { name: 'Tejidos blandos con doppler', price: 140000 },
-                        { name: 'Tejidos blandos bilateral', price: 160000 },
-                        { name: 'Pericardio-pleura', price: 140000 },
-                        { name: 'Tórax', price: 140000 }
-                    ]
+    setup() {
+        const { links } = useLinks();
+        const categories = ref([]);
+
+        onMounted(async () => {
+            try {
+                const response = await fetch('content/tarifas.json');
+                if (response.ok) {
+                    categories.value = await response.json();
                 }
-            ]
-        };
-    },
-    methods: {
-        formatPrice(price) {
+            } catch (error) {
+                console.error("Error loading tarifas:", error);
+            }
+        });
+
+        const formatPrice = (price) => {
             return new Intl.NumberFormat('es-CO', {
                 style: 'currency',
                 currency: 'COP',
                 minimumFractionDigits: 0
             }).format(price);
-        }
+        };
+
+        return { links, categories, formatPrice };
     },
     template: `
         <div class="tarifas-section" style="padding-top: 60px; padding-bottom: 80px; background-color: var(--bg-light);">
@@ -92,7 +54,7 @@ export default {
                 </div>
 
                 <div class="text-center" style="margin-top: 60px;">
-                    <a href="https://ecografiasbogota.site.agendapro.com/co" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 40px; border-radius: 30px; box-shadow: 0 10px 20px rgba(0, 207, 191, 0.3);">
+                    <a :href="links.agenda" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 40px; border-radius: 30px; box-shadow: 0 10px 20px rgba(0, 207, 191, 0.3);">
                         <i class="far fa-calendar-check" style="margin-right:10px;"></i> Agendar Cita Ahora
                     </a>
                 </div>

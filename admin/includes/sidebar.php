@@ -27,6 +27,16 @@
                 </a>
             </li>
             <li>
+                <a href="index.php?page=tarifas" class="<?php echo $page === 'tarifas' ? 'active' : ''; ?>">
+                    <i class="fas fa-hand-holding-usd"></i> Tarifas
+                </a>
+            </li>
+            <li>
+                <a href="index.php?page=links" class="<?php echo $page === 'links' ? 'active' : ''; ?>">
+                    <i class="fas fa-link"></i> Enlaces Globales
+                </a>
+            </li>
+            <li>
                 <a href="index.php?page=users" class="<?php echo $page === 'users' ? 'active' : ''; ?>">
                     <i class="fas fa-users"></i> Usuarios
                 </a>

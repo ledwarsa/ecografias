@@ -1,15 +1,20 @@
 import { createApp } from 'vue';
+import { useLinks } from './composables/useLinks.js';
 import HeaderComponent from './components/HeaderComponent.js?v=7';
 import ContactenosComponent from './components/ContactenosComponent.js?v=1';
 import FooterComponent from './components/FooterComponent.js';
 
 const app = createApp({
+    setup() {
+        const { links } = useLinks();
+        return { links };
+    },
     template: `
         <div>
             <HeaderComponent />
             <ContactenosComponent />
             <FooterComponent />
-            <a href="https://wa.link/42dexe" target="_blank" class="whatsapp-float">
+            <a :href="links.whatsapp" target="_blank" class="whatsapp-float">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>

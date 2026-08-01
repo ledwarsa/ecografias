@@ -24,7 +24,7 @@ include 'includes/header.php';
 
         <div class="admin-main">
             <?php
-            $allowed_pages = ['dashboard', 'blogs', 'blog_edit', 'users', 'services', 'testimonials', 'settings'];
+            $allowed_pages = ['dashboard', 'blogs', 'blog_edit', 'users', 'services', 'testimonials', 'settings', 'links', 'tarifas'];
             if (in_array($page, $allowed_pages)) {
                 $page_file = "pages/{$page}.php";
                 if(file_exists($page_file)) {
