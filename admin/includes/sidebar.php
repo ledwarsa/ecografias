@@ -12,6 +12,11 @@
                 </a>
             </li>
             <li>
+                <a href="index.php?page=banners" class="<?php echo $page === 'banners' ? 'active' : ''; ?>">
+                    <i class="fas fa-images"></i> Banners Hero
+                </a>
+            </li>
+            <li>
                 <a href="index.php?page=blogs" class="<?php echo $page === 'blogs' ? 'active' : ''; ?>">
                     <i class="fas fa-blog"></i> Blogs
                 </a>
