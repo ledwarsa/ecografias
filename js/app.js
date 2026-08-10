@@ -1,6 +1,6 @@
 import { createApp } from 'vue';
 import { useLinks } from './composables/useLinks.js';
-import HeaderComponent from './components/HeaderComponent.js?v=8';
+import HeaderComponent from './components/HeaderComponent.js?v=9';
 import HeroComponent from './components/HeroComponent.js';
 import StepsComponent from './components/StepsComponent.js';
 import ServicesComponent from './components/ServicesComponent.js';

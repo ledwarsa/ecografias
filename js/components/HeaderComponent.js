@@ -32,9 +32,14 @@ export default {
                     <img src="assets/logo.jpg" alt="Ecografías Bogotá" style="height: 40px; margin-right: 10px;">
                 </a>
                 
-                <button class="mobile-menu-btn" @click="toggleMenu" aria-label="Toggle menu">
-                    <i :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
-                </button>
+                <div class="mobile-actions">
+                    <a :href="links.whatsapp" target="_blank" class="mobile-wa-btn" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <button class="mobile-menu-btn" @click="toggleMenu" aria-label="Toggle menu">
+                        <i :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+                    </button>
+                </div>
                 
                 <nav :class="['nav-links', { 'open': isMenuOpen }]">
                     <a href="index.html" class="text-secondary" @click="isMenuOpen = false">Inicio</a>

@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1786380404,
+        "title": "Promo Agosto",
+        "image": "assets\/banner_1786380627_6a7a015368722.jpg",
+        "link": "https:\/\/api.whatsapp.com\/send?phone=573005093568&text=Hola%2C%20me%20gustar%C3%ADa%20sacar%20una%20cita",
+        "device": "pc"
+    },
+    {
+        "id": 1786380654,
+        "title": "Promo Agosto Mobile",
+        "image": "assets\/banner_1786380779_6a7a01eb20234.jpeg",
+        "link": "https:\/\/api.whatsapp.com\/send?phone=573005093568&text=Hola%2C%20me%20gustar%C3%ADa%20sacar%20una%20cita",
+        "device": "mobile"
+    }
+]

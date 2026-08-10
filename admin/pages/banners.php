@@ -18,10 +18,28 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $id = (int)$_POST['id'];
         if (!$id) $id = time(); // Generar ID si es nuevo
         
+        $image_path = trim($_POST['existing_image'] ?? '');
+        
+        // Manejo de subida de archivo
+        if (isset($_FILES['image_file']) && $_FILES['image_file']['error'] === UPLOAD_ERR_OK) {
+            $upload_dir = '../assets/';
+            // Crear nombre de archivo único
+            $file_extension = pathinfo($_FILES['image_file']['name'], PATHINFO_EXTENSION);
+            $file_name = 'banner_' . time() . '_' . uniqid() . '.' . $file_extension;
+            $target_file = $upload_dir . $file_name;
+            
+            if (move_uploaded_file($_FILES['image_file']['tmp_name'], $target_file)) {
+                $image_path = 'assets/' . $file_name;
+            }
+        } elseif (empty($image_path) && isset($_POST['image'])) {
+            // Soporte para mantener compatibilidad si se envía campo texto
+            $image_path = trim($_POST['image']);
+        }
+        
         $new_banner = [
             'id' => $id,
             'title' => trim($_POST['title']),
-            'image' => trim($_POST['image']),
+            'image' => $image_path,
             'link' => trim($_POST['link']),
             'device' => trim($_POST['device']) // 'pc' or 'mobile'
         ];
@@ -62,7 +80,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             document.getElementById('banner-form').style.display='block'; 
             document.getElementById('b-id').value='<?php echo time(); ?>'; 
             document.getElementById('b-title').value=''; 
-            document.getElementById('b-img').value=''; 
+            document.getElementById('b-img-file').value=''; 
+            document.getElementById('b-img-existing').value=''; 
             document.getElementById('b-link').value=''; 
             document.getElementById('b-device').value='pc';
         "><i class="fas fa-plus"></i> Nuevo Banner</button>
@@ -76,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     <div id="banner-form" style="display: none; background: var(--bg-light); border: 1px solid var(--border); padding: 20px; border-radius: 8px; margin-bottom: 20px;">
         <h4>Agregar / Editar Banner</h4>
-        <form method="POST" action="index.php?page=banners" style="margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <form method="POST" action="index.php?page=banners" enctype="multipart/form-data" style="margin-top: 15px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
             <input type="hidden" name="action" value="save_banner">
             <input type="hidden" name="id" id="b-id" value="">
             
@@ -94,8 +113,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </div>
             
             <div class="form-group" style="grid-column: 1 / -1;">
-                <label>Imagen (URL o ruta, ej: assets/hero.png)</label>
-                <input type="text" name="image" id="b-img" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--border);" required>
+                <label>Imagen (Sube desde tu PC)</label>
+                <input type="file" name="image_file" id="b-img-file" accept="image/*" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid var(--border);">
+                <input type="hidden" name="existing_image" id="b-img-existing" value="">
+                <p style="font-size: 0.8rem; color: #666; margin-top: 5px;">Deja vacío si ya hay una imagen y no deseas cambiarla.</p>
             </div>
             
             <div class="form-group" style="grid-column: 1 / -1;">
@@ -169,7 +190,8 @@ function editBanner(banner) {
     document.getElementById('b-id').value = banner.id;
     document.getElementById('b-title').value = banner.title;
     document.getElementById('b-device').value = banner.device || 'pc';
-    document.getElementById('b-img').value = banner.image;
+    document.getElementById('b-img-file').value = '';
+    document.getElementById('b-img-existing').value = banner.image;
     document.getElementById('b-link').value = banner.link;
     window.scrollTo(0, 0);
 }

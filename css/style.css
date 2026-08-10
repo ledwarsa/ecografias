@@ -916,7 +916,7 @@ ul {
 .whatsapp-float {
   position: fixed;
   bottom: 30px;
-  right: 30px;
+  left: 30px;
   width: 60px;
   height: 60px;
   background: #25D366;
@@ -937,6 +937,17 @@ ul {
 
 /* Responsive (Comprehensive) */
 /* Mobile Menu Toggle */
+.mobile-actions {
+  display: none;
+}
+.mobile-wa-btn {
+  color: #25D366;
+  font-size: 1.8rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
 .mobile-menu-btn {
   display: none;
   background: none;
@@ -1000,8 +1011,16 @@ ul {
 
 @media (max-width: 768px) {
   /* Navigation */
+  .mobile-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
   .mobile-menu-btn {
     display: block;
+  }
+  .whatsapp-float {
+    display: none !important;
   }
   .nav-links {
     display: none;
@@ -1105,6 +1124,11 @@ ul {
     flex-direction: column;
   }
   
+  /* Utilities for mobile */
+  .subtitle {
+    text-align: center;
+  }
+
   /* Footer */
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1112,6 +1136,9 @@ ul {
   }
   .footer-logo, .social-links {
     justify-content: center;
+  }
+  .footer-contact ul li {
+    justify-content: center !important;
   }
   .cta-banner .container {
     flex-direction: column;

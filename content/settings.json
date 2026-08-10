@@ -1,0 +1,5 @@
+{
+    "head_tags": "<!-- Google Tag Manager ePPC -->\r\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\r\nj=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\r\n'https:\/\/www.googletagmanager.com\/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\r\n})(window,document,'script','dataLayer','GTM-55P5WG8Q');<\/script>\r\n<!-- End Google Tag Manager -->\r\n\r\n<!-- WhatsApp Chat ePPC -->\r\n<script defer src=\"https:\/\/widget.tochat.be\/bundle.js?key=d4d9da4b-802e-4d2d-bb58-7c8eb38aaf12\"><\/script>\r\n<!-- End WhatsApp Chat --> ",
+    "body_start_tags": "",
+    "body_end_tags": ""
+}
