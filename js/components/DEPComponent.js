@@ -46,12 +46,20 @@ export default {
                         </ul>
                     </div>
                     <div class="col-md-6" style="flex: 1; min-width: 300px; text-align: center;">
-                        <img src="https://ecografiasbogota.com/wp-content/uploads/2024/03/woman-getting-ultrasound-abdomen-from-doctor-1.jpg" alt="Ecografía" style="max-width: 350px; width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: inline-block;">
+                        <img src="assets/premium_banner.png" alt="Ecografía" style="max-width: 350px; width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); display: inline-block;">
                     </div>
                 </div>
 
                 <div class="locations-cta" style="margin-top: 80px; text-align: center; background-color: var(--bg-light); padding: 50px 20px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">
                     <h3 style="color: var(--primary); margin-bottom: 40px; font-size: 1.8rem; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.4;">¡Agende usted mismo su cita de forma fácil y rápida!</h3>
+                    <div class="text-center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+                        <a href="https://ecografiasbogota.agendapro.com/co" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px;">
+                            <i class="far fa-calendar-check" style="margin-right: 8px;"></i> Programar cita online
+                        </a>
+                        <a href="https://wa.link/42dexe" target="_blank" class="btn btn-outline" style="font-size: 1.1rem; padding: 12px 30px; display: inline-flex; align-items: center; gap: 8px;">
+                            <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
+                        </a>
+                    </div>
                     <div class="locations-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; max-width: 1000px; margin: 0 auto 40px auto; text-align: left;">
                         <div class="location-card" style="background: var(--white); padding: 30px 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.04); transition: transform 0.3s; border-top: 4px solid var(--secondary); display: grid; grid-template-columns: 80px 1fr auto; gap: 15px; align-items: center; border-left: 1px solid #eee; border-right: 1px solid #eee; border-bottom: 1px solid #eee;">
                             <div style="display: flex; align-items: center; justify-content: flex-start; color: var(--secondary); font-weight: 800; font-size: 1rem; gap: 8px;">
@@ -78,9 +86,7 @@ export default {
                             </a>
                         </div>
                     </div>
-                    <a href="https://ecografiasbogota.agendapro.com/co" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 40px; box-shadow: 0 10px 20px rgba(0,207,191,0.3);">
-                        Agendar Cita
-                    </a>
+                    
                 </div>
             </div>
         </div>

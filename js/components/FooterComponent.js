@@ -44,9 +44,10 @@ export default {
                         <h4>Información</h4>
                         <ul>
                             <li><a href="blogs.html">Blog</a></li>
-                            <li><a href="#">Preguntas frecuentes</a></li>
-                            <li><a href="#">Políticas de privacidad</a></li>
-                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                            <li><a href="politicas.html">Políticas de privacidad</a></li>
+                            <li><a href="politicas.html">Términos y condiciones</a></li>
+                            <li><a href="clausula.html">Cláusula de consentimiento</a></li>
                         </ul>
                     </div>
                     

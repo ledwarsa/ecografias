@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import { useLinks } from './composables/useLinks.js';
-import HeaderComponent from './components/HeaderComponent.js?v=7';
-import TestimoniosComponent from './components/TestimoniosComponent.js?v=1';
-import FooterComponent from './components/FooterComponent.js';
+import HeaderComponent from './components/HeaderComponent.js?v=9';
+import TestimoniosComponent from './components/TestimoniosComponent.js?v=2';
+import FooterComponent from './components/FooterComponent.js?v=4';
 
 const app = createApp({
     setup() {

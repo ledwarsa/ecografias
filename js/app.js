@@ -1,15 +1,15 @@
 import { createApp } from 'vue';
 import { useLinks } from './composables/useLinks.js';
-import HeaderComponent from './components/HeaderComponent.js?v=9';
-import HeroComponent from './components/HeroComponent.js';
-import StepsComponent from './components/StepsComponent.js';
-import ServicesComponent from './components/ServicesComponent.js';
-import FeaturesComponent from './components/FeaturesComponent.js';
-import PremiumComponent from './components/PremiumComponent.js?v=2';
-import LocationsComponent from './components/LocationsComponent.js?v=8';
-import ArticlesComponent from './components/ArticlesComponent.js?v=2';
-import CTAComponent from './components/CTAComponent.js';
-import FooterComponent from './components/FooterComponent.js';
+import HeaderComponent from './components/HeaderComponent.js?v=11';
+import HeroComponent from './components/HeroComponent.js?v=1';
+import StepsComponent from './components/StepsComponent.js?v=1';
+import ServicesComponent from './components/ServicesComponent.js?v=1';
+import FeaturesComponent from './components/FeaturesComponent.js?v=1';
+import PremiumComponent from './components/PremiumComponent.js?v=3';
+import LocationsComponent from './components/LocationsComponent.js?v=9';
+import ArticlesComponent from './components/ArticlesComponent.js?v=3';
+import CTAComponent from './components/CTAComponent.js?v=1';
+import FooterComponent from './components/FooterComponent.js?v=4';
 
 const app = createApp({
     setup() {

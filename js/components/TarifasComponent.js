@@ -53,9 +53,12 @@ export default {
                     </div>
                 </div>
 
-                <div class="text-center" style="margin-top: 60px;">
-                    <a :href="links.agenda" target="_blank" class="btn btn-primary" style="font-size: 1.2rem; padding: 15px 40px; border-radius: 30px; box-shadow: 0 10px 20px rgba(0, 207, 191, 0.3);">
-                        <i class="far fa-calendar-check" style="margin-right:10px;"></i> Agendar Cita Ahora
+                <div class="text-center" style="margin-top: 60px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                    <a :href="links.agenda" target="_blank" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 30px;">
+                        <i class="far fa-calendar-check" style="margin-right: 8px;"></i> Programar cita online
+                    </a>
+                    <a href="https://wa.link/42dexe" target="_blank" class="btn btn-outline" style="font-size: 1.1rem; padding: 12px 30px; display: inline-flex; align-items: center; gap: 8px;">
+                        <i class="fab fa-whatsapp"></i> Agendar por WhatsApp
                     </a>
                 </div>
             </div>

@@ -61,7 +61,7 @@ export default {
                         </div>
                     </div>
                     <a href="dep.html" @click="isMenuOpen = false">DEP</a>
-                    <a href="sedes.html" @click="isMenuOpen = false">Sedes</a>
+
                     <a href="blogs.html" @click="isMenuOpen = false">Blog</a>
                     <a href="contactenos.html" @click="isMenuOpen = false">Contacto</a>
                     <div class="header-actions-mobile" v-if="isMenuOpen" style="display: flex; flex-direction: column; width: 100%; gap: 10px; margin-top: 15px;">
