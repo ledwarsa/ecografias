@@ -58,33 +58,10 @@ export default {
                     </div>
                 </div>
 
-                <div class="tarifa-category-card" style="max-width: 800px; margin: 60px auto 0 auto; background: var(--white); border-radius: 16px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid var(--border);">
-                    <div class="tarifa-header" style="background-color: var(--primary); padding: 25px; text-align: center; color: white;">
-                        <i class="fas fa-baby" style="font-size: 2rem; color: var(--secondary); margin-bottom: 15px; display: block;"></i>
-                        <h3 style="margin: 0; font-size: 1.4rem;">Tarifas de Ecografías Obstétricas y Pélvicas</h3>
+                <div class="text-center" style="margin-top: 60px;">
+                    <div style="display: inline-block; background-color: var(--secondary-light); border: 2px solid var(--secondary); padding: 15px 40px; border-radius: 50px; font-size: 1.8rem; font-weight: 800; color: var(--primary); box-shadow: 0 10px 20px rgba(0, 207, 191, 0.15);">
+                        Precio: $ 180.000
                     </div>
-                    <ul class="tarifa-list" style="list-style: none; padding: 0; margin: 0;">
-                        <li style="padding: 18px 25px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                            <span style="font-weight: 500; color: var(--text-dark); flex: 1; padding-right: 15px; line-height: 1.4;">Obstétrica transabdominal</span>
-                            <span style="font-weight: 800; color: var(--secondary); font-size: 1.1rem; white-space: nowrap;">$ 100.000</span>
-                        </li>
-                        <li style="padding: 18px 25px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                            <span style="font-weight: 500; color: var(--text-dark); flex: 1; padding-right: 15px; line-height: 1.4;">Obstétrica transvaginal</span>
-                            <span style="font-weight: 800; color: var(--secondary); font-size: 1.1rem; white-space: nowrap;">$ 110.000</span>
-                        </li>
-                        <li style="padding: 18px 25px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                            <span style="font-weight: 500; color: var(--text-dark); flex: 1; padding-right: 15px; line-height: 1.4;">Pélvica transabdominal</span>
-                            <span style="font-weight: 800; color: var(--secondary); font-size: 1.1rem; white-space: nowrap;">$ 100.000</span>
-                        </li>
-                        <li style="padding: 18px 25px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                            <span style="font-weight: 500; color: var(--text-dark); flex: 1; padding-right: 15px; line-height: 1.4;">Pélvica transvaginal</span>
-                            <span style="font-weight: 800; color: var(--secondary); font-size: 1.1rem; white-space: nowrap;">$ 110.000</span>
-                        </li>
-                        <li style="padding: 18px 25px; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s;">
-                            <span style="font-weight: 500; color: var(--text-dark); flex: 1; padding-right: 15px; line-height: 1.4;">Seguimiento ovulación (por sesión)</span>
-                            <span style="font-weight: 800; color: var(--secondary); font-size: 1.1rem; white-space: nowrap;">$ 100.000</span>
-                        </li>
-                    </ul>
                 </div>
 
                 <div class="locations-cta" style="margin-top: 80px; text-align: center; background-color: var(--bg-light); padding: 50px 20px; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.03);">

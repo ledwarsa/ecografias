@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "title": "Ecografías Obstétricas",
+    "title": "Ecografías Obstétricas Avanzadas",
     "description": "Acompañamos cada etapa de tu embarazo con la mejor tecnología.",
     "image": "assets/service2.png",
     "icon": "fa-baby",
@@ -19,6 +19,15 @@
   },
   {
     "id": 3,
+    "title": "Ecografías Obstétricas y Pélvicas",
+    "description": "Servicios especializados en ecografías obstétricas y pélvicas para el cuidado y seguimiento de tu salud.",
+    "image": "assets/servicio-pelvica.jpg",
+    "icon": "fa-stethoscope",
+    "link": "ecografias-obstetricas-y-pelvicas.html",
+    "highlight": false
+  },
+  {
+    "id": 4,
     "title": "Ecografías Doppler",
     "description": "Estudiamos el flujo sanguíneo para detectar alteraciones vasculares.",
     "image": "assets/service3.png",
@@ -27,7 +36,7 @@
     "highlight": false
   },
   {
-    "id": 4,
+    "id": 5,
     "title": "Diagnóstico Ecográfico Preventivo (DEP)",
     "description": "Un examen completo para evaluar múltiples órganos y detectar alteraciones tempranas.",
     "image": "assets/service4.png",

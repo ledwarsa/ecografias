@@ -57,6 +57,7 @@ export default {
                             <a href="ecografias-generales.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Generales</a>
                             <a href="dep.html" @click="isMenuOpen = false; isServicesOpen = false">Diagnóstico Ecográfico Preventivo (DEP)</a>
                             <a href="obstetricas.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Obstétricas Avanzadas</a>
+                            <a href="ecografias-obstetricas-y-pelvicas.html" @click="isMenuOpen = false; isServicesOpen = false">Ecografías Obstétricas y Pélvicas</a>
                             <a href="doppler.html" @click="isMenuOpen = false; isServicesOpen = false">Doppler o Dúplex Scan Color</a>
                         </div>
                     </div>
