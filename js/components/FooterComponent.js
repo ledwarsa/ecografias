@@ -53,18 +53,14 @@ export default {
                     
                     <div class="footer-contact">
                         <h4>Contacto</h4>
-                        <ul style="gap: 20px;">
-                            <li style="display:flex; align-items:flex-start; gap:10px;">
-                                <i class="fas fa-phone-alt" style="color:var(--secondary); margin-top:3px;"></i>
-                                <span style="color: rgba(255,255,255,0.7); font-size:0.9rem;">(601) 745 0740</span>
+                        <ul style="gap: 20px; display: flex; flex-direction: column;">
+                            <li style="display:flex; align-items:center; gap:15px;">
+                                <i class="fab fa-whatsapp" style="color:var(--secondary); font-size:1.2rem;"></i>
+                                <span style="color: rgba(255,255,255,0.85); font-size:1rem;">+57 300 509 3568</span>
                             </li>
-                            <li style="display:flex; align-items:flex-start; gap:10px;">
-                                <i class="fab fa-whatsapp" style="color:var(--secondary); margin-top:3px;"></i>
-                                <span style="color: rgba(255,255,255,0.7); font-size:0.9rem;">+57 320 403 7965</span>
-                            </li>
-                            <li style="display:flex; align-items:flex-start; gap:10px;">
-                                <i class="far fa-envelope" style="color:var(--secondary); margin-top:3px;"></i>
-                                <span style="color: rgba(255,255,255,0.7); font-size:0.9rem;">info@ecografiasbogota.com</span>
+                            <li style="display:flex; align-items:center; gap:15px;">
+                                <i class="far fa-envelope" style="color:var(--secondary); font-size:1.2rem;"></i>
+                                <span style="color: rgba(255,255,255,0.85); font-size:1rem;">ecografiasbogota@gmail.com</span>
                             </li>
                         </ul>
                     </div>

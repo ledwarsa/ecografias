@@ -9,7 +9,7 @@ import PremiumComponent from './components/PremiumComponent.js?v=3';
 import LocationsComponent from './components/LocationsComponent.js?v=9';
 import ArticlesComponent from './components/ArticlesComponent.js?v=3';
 import CTAComponent from './components/CTAComponent.js?v=1';
-import FooterComponent from './components/FooterComponent.js?v=4';
+import FooterComponent from './components/FooterComponent.js?v=5';
 
 const app = createApp({
     setup() {

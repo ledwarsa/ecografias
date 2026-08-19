@@ -2,7 +2,7 @@ import { createApp } from 'vue';
 import { useLinks } from './composables/useLinks.js';
 import HeaderComponent from './components/HeaderComponent.js?v=2';
 import FooterComponent from './components/FooterComponent.js?v=4';
-import DopplerComponent from './components/DopplerComponent.js?v=1';
+import DopplerComponent from './components/DopplerComponent.js?v=3';
 
 const app = createApp({
     setup() {

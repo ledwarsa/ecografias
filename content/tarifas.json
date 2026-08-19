@@ -11,7 +11,7 @@
         ]
     },
     {
-        "name": "Ecografías Especializadas y Doppers",
+        "name": "Doppler",
         "icon": "fas fa-heartbeat",
         "items": [
             { "name": "Doppler venoso o arterial miembros inferiores o superiores (bilateral)", "price": 220000 },
